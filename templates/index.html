@@ -1,0 +1,467 @@
+{% extends 'extend/base.html' %}
+{% block content %}
+{% load static %}
+<!-- Hero Section -->
+<section id="hero" class="hero section dark-background">
+
+  <div id="hero-carousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-item active">
+      <div class="carousel-container">
+        <h2 class="animate__animated animate__fadeInDown">I am <span>{{name}}</span></h2>
+        <p class="animate__animated animate__fadeInUp">{{whyoards}}</p>
+        <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+      </div>
+    </div>
+
+  </div>
+
+  <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28 " preserveAspectRatio="none">
+    <defs>
+      <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+    </defs>
+    <g class="wave1">
+      <use xlink:href="#wave-path" x="50" y="3"></use>
+    </g>
+    <g class="wave2">
+      <use xlink:href="#wave-path" x="50" y="0"></use>
+    </g>
+    <g class="wave3">
+      <use xlink:href="#wave-path" x="50" y="9"></use>
+    </g>
+  </svg>
+
+</section><!-- /Hero Section -->
+
+<!-- About Section -->
+<section id="about" class="about section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>About</h2>
+    <p>Who I am</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+        <p>
+          I am Akingbade Boluwatife, a dedicated and detail-oriented software developer with a strong foundation in
+          HTML, CSS, JavaScript, and Python. My journey in technology started with a deep curiosity for how things work
+          and a passion for bringing ideas to life through code.
+        </p>
+        <ul>
+          <li><i class="bi bi-check2-circle"></i> <span>Innovative Problem Solver</span></li>
+          <li><i class="bi bi-check2-circle"></i> <span>UI/UX Enthusiast</span></li>
+          <li><i class="bi bi-check2-circle"></i> <span>Continuous Learner</span></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <p>On this journey, I have had the opportunity to work on a variety of projects, each contributing to my skill
+          set and knowledge. I'm excited about the future of technology and how I can contribute to it. </p>
+        <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+      </div>
+
+    </div>
+
+  </div>
+
+</section><!-- /About Section -->
+
+<!-- Features Section -->
+<section id="features" class="features section">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Services</h2>
+    <p>What I do</p>
+  </div>
+  <div class="container">
+
+    <ul class="nav nav-tabs row  d-flex" data-aos="fade-up" data-aos-delay="100">
+      <li class="nav-item col-3">
+        <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
+          <i class="bi bi-binoculars"></i>
+          <h4 class="d-none d-lg-block">{{ye1}}</h4>
+        </a>
+      </li>
+      <li class="nav-item col-3">
+        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
+          <i class="bi bi-box-seam"></i>
+          <h4 class="d-none d-lg-block">{{ye2}}</h4>
+        </a>
+      </li>
+      <li class="nav-item col-3">
+        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
+          <i class="bi bi-brightness-high"></i>
+          <h4 class="d-none d-lg-block">{{ye3}}</h4>
+        </a>
+      </li><!-- End Tab Nav -->
+
+      <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+
+        <div class="tab-pane fade active show" id="features-tab-1">
+          <div class="row">
+            <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+              <h3>{{ye1}}</h3>
+              <p class="fst-italic">
+                Crafting responsive and visually appealing user interfaces with the latest HTML, CSS, and JavaScript
+                frameworks.
+              </p>
+              <ul>
+                <li><i class="bi bi-check2-all"></i> <span>{{yff1}}</span>.</li>
+                <li><i class="bi bi-check2-all"></i> <span>{{yff2}}</span></li>
+              </ul>
+              <p>
+                {{ysub}}
+              </p>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2 text-center">
+              <img src="{% static 'assets/img/working-1.jpg' %}" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div><!-- End Tab Content Item -->
+
+        <div class="tab-pane fade" id="features-tab-2">
+          <div class="row">
+            <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+              <h3>Backend Development</h3>
+              <p>
+                Building secure and scalable server-side applications using Python for optimal performance.
+              </p>
+              <ul>
+                <li><i class="bi bi-check2-all"></i> <span>{{ybf1}}</span></li>
+                <li><i class="bi bi-check2-all"></i> <span>{{ybf2}}</span></li>
+              </ul>
+              <p>
+                {{ysub}}
+              </p>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2 text-center">
+              <img src="{% static 'assets/img/working-2.jpg' %}" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div><!-- End Tab Content Item -->
+
+        <div class="tab-pane fade" id="features-tab-3">
+          <div class="row">
+            <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+              <h3>Full-stack Development</h3>
+              <p>
+                Delivering end-to-end development solutions, handling both frontend and backend tasks seamlessly.
+              </p>
+              <ul>
+                <li><i class="bi bi-check2-all"></i> <span>{{yf1}}</span></li>
+                <li><i class="bi bi-check2-all"></i> <span>{{yf2}}</span></li>
+              </ul>
+              <p>
+                {{ysub}}
+              </p>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2 text-center">
+              <img src="{% static 'assets/img/working-3.jpg' %}" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div><!-- End Tab Content Item -->
+      </div>
+
+  </div>
+
+</section><!-- /Features Section -->
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="portfolio section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Portfolio</h2>
+    <p>What I've done</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+      <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+        <li data-filter="*" class="filter-active">All</li>
+        <li data-filter=".filter-frontend">Frontend</li>
+        <li data-filter=".filter-fullstack">Full-stack</li>
+      </ul><!-- End Portfolio Filters -->
+
+      <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-frontend">
+          <img src="{% static 'assets/img/masonry-portfolio/masonry-portfolio-1.png' %}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Opay</h4>
+            <p>Landing Page</p>
+            <a href="{% static 'assets/img/masonry-portfolio/masonry-portfolio-1.png' %}" title="App 1"
+              data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-frontend">
+          <img src="{% static 'assets/img/masonry-portfolio/masonry-portfolio-2.png' %}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Gt-Bank</h4>
+            <p>Frontend-User interactio, 5 pages</p>
+            <a href="{% static 'assets/img/masonry-portfolio/masonry-portfolio-2.png  ' %}" title="Product 1"
+              data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-frontend">
+          <img src="{% static 'assets/img/masonry-portfolio/masonry-portfolio-3.jpg' %}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Cardify</h4>
+            <p>Frontend Design, HTML, CSS</p>
+            <a href="{% static 'assets/img/masonry-portfolio/masonry-portfolio-3.jpg' %}" title="Branding 1"
+              data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-fullstack">
+          <img src="{% static 'assets/img/masonry-portfolio/masonry-portfolio-4.jpg' %}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>SQI</h4>
+            <p>Athentication Backend</p>
+            <a href="{% static 'assets/img/masonry-portfolio/masonry-portfolio-4.jpg' %}" title="App 2"
+              data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-fullstack">
+          <img src="{% static 'assets/img/masonry-portfolio/masonry-portfolio-5.jpg' %}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>MySQL Database Loan App</h4>
+            <p>SQL connection Integration</p>
+            <a href="{% static 'assets/img/masonry-portfolio/masonry-portfolio-5.jpg' %}" title="Product 2"
+              data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-fullstack">
+          <img src="{% static 'assets/img/masonry-portfolio/masonry-portfolio-7.jpg' %}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Ruminate</h4>
+            <p>Blog-Website Fullstack-Flask</p>
+            <a href="{% static 'assets/img/masonry-portfolio/masonry-portfolio-7.jpg' %}" title="App 3"
+              data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-fullstack">
+          <img src="{% static 'assets/img/masonry-portfolio/masonry-portfolio-8.jpg' %}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Class-On</h4>
+            <p>Frontend - Backend - Navigation</p>
+            <a href="{% static 'assets/img/masonry-portfolio/masonry-portfolio-8.jpg' %}" title="Product 3"
+              data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+      </div><!-- End Portfolio Container -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Portfolio Section -->
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Testimonials</h2>
+    <p>What People Say</p>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="swiper init-swiper">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+            <h3>{{tess}}</h3>
+            <h4>{{tesp}}</h4>
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>{{testimo}}</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+          </div>
+        </div><!-- End testimonial item -->
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+  </div>
+
+</section><!-- /Testimonials Section -->
+
+        
+<!-- Faq Section -->
+<section id="faq" class="faq section">
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Frequently Asked Questions</h2>
+    <p>Frequently Asked Questions</p>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up">
+    <div class="row">
+      <div class="col-12">
+        <div class="custom-accordion" id="accordion-faq">
+          <div class="accordion-item">
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-faq-1">
+                {{faq1}}
+              </button>
+            </h2>
+
+            <div id="collapse-faq-1" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion-faq">
+              <div class="accordion-body">
+                {{faqa1}}
+              </div>
+            </div>
+          </div>
+          <!-- .accordion-item -->
+
+          <div class="accordion-item">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-faq-2">
+              {{faq2}}
+            </button>
+          </h2>
+          <div id="collapse-faq-2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-faq">
+                <div class="accordion-body">
+                  {{faqa2}}
+                </div>
+          </div>
+        </div>
+        <!-- .accordion-item -->
+
+        <div class="accordion-item">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse-faq-3">
+              {{faq3}}
+            </button>
+          </h2>
+
+          <div id="collapse-faq-3" class="collapse" aria-labelledby="headingThree" data-parent="#accordion-faq">
+            <div class="accordion-body">
+              {{faqa3}}
+            </div>
+          </div>
+        </div>
+        <!-- .accordion-item -->
+
+      </div>
+    </div>
+  </div>
+  </div>
+</section><!-- /Faq Section -->
+
+<!-- Contact Section -->
+<section id="contact" class="contact section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Contact</h2>
+    <p>Contact</p>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade" data-aos-delay="100">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-4">
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+          <i class="bi bi-geo-alt flex-shrink-0"></i>
+          <div>
+            <h3>Address</h3>
+            <p>{{address}}</p>
+          </div>
+        </div><!-- End Info Item -->
+
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+          <i class="bi bi-telephone flex-shrink-0"></i>
+          <div>
+            <h3>Call Me</h3>
+            <p>{{contact}}</p>
+          </div>
+        </div><!-- End Info Item -->
+
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+          <i class="bi bi-envelope flex-shrink-0"></i>
+          <div>
+            <h3>Email Me</h3>
+            <p>{{email}}</p>
+          </div>
+        </div><!-- End Info Item -->
+
+      </div>
+
+      <div class="col-lg-8">
+        <form action="mailto:akingbadeboluwatife030@gmail.com" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+          {% csrf_token %}
+          <div class="row gy-4">
+
+            <div class="col-md-6">
+              <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+            </div>
+
+            <div class="col-md-6 ">
+              <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+            </div>
+
+            <div class="col-md-12">
+              <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+            </div>
+
+            <div class="col-md-12">
+              <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+            </div>
+
+            <div class="col-md-12 text-center">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+
+              <button type="submit">Send Message</button>
+            </div>
+        
+
+          </div>
+        </form>
+      </div><!-- End Contact Form -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Contact Section -->
+
+{% endblock %}
